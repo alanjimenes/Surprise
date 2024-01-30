@@ -232,7 +232,7 @@ body {
   width: 270px;
   height: 500px;
 text-align: justify;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
