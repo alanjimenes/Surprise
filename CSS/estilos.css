@@ -2,13 +2,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 65vh;
+  min-height: 100vh;
   background-color: #fae1dd;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
   position: relative;
 
+  margin: auto;
 }
 
 .valentines {
@@ -72,11 +77,11 @@ body {
 .text {
   position: absolute;
   font-family: 'Brush Script MT', cursive;
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
   line-height:25px;
   top:25px;
-  left:25%;
+  left: 10%;
   color: #003049;
 }
 
@@ -86,7 +91,7 @@ body {
   height: 30px;
   margin: 0 10px;
   position: relative;
-  top: 110px;
+  top: 90px;
   left:105px;
   transform: rotate(-45deg);
   width: 30px;
@@ -229,23 +234,28 @@ body {
 .card-inner {
   position: absolute;
   background-color: #eae2b7;
-  width: 270px;
-  height: 500px;
-text-align: justify;
+  width: 90%;
+  max-width: 320px;
+  max-height: 70vh;
+  overflow-y: auto;
+  text-align: justify;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   display: none;
+  padding: 10px;
+  box-sizing: border-box;
 }
-
 .card-inner p {
   font-family: Arial, sans-serif;
-  font-size: 14px;
-  text-align: center;
-  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  margin: 0;
 }
+
 
 
 strong {
@@ -256,4 +266,20 @@ strong {
 
 .name{
   color: navy;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close-button:hover {
+  transform: scale(1.2) rotate(90deg);
+  color: #003049;
 }
