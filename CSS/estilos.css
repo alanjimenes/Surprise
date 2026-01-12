@@ -81,7 +81,7 @@ body {
   text-align: center;
   line-height:25px;
   top:25px;
-  left: 10%;
+  left: 20%;
   color: #003049;
 }
 
@@ -282,4 +282,5 @@ strong {
 .close-button:hover {
   transform: scale(1.2) rotate(90deg);
   color: #003049;
+
 }
